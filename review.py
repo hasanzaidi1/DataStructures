@@ -20,13 +20,32 @@ print()
 #Bitwise operators
 print(4 << 2) # 4 / 2^2 = 16
 print(128 >> 4) # 128 / 2^4 = 8
-print(0b111 & 0b1100) # = 0b1100 = 12    and
-print(0b111 | 0b1100) # = 0b1111 = 15    or
-print(0b111 ^ 0b0101) # = 0b1001 = 9     xor
+print("")
+print(0b1111 & 0b1100) # = 0b1100 = 12    and
+print(0b1111 | 0b1100) # = 0b1111 = 15    or
+print(0b1111 ^ 0b0110) # = 0b1001 = 9     xor - if both are SAME it is 0 if both are DIFFERENT it is 1
 
 
+print("")
+# if statements 
+number = 3
+if number % 2 == 0:
+    print("even")
+else: 
+    print("odd")
 
 
+# Reading input from a User
+name = input("Enter your name: ")
+age = input("Enter age: ")
+salary = int(input("Enter salary: "))  # if we want to manipulate a number after; Do casting for it
+
+
+bonus = 100
+
+salary = salary + bonus
+
+print(salary)
 
 
 print("\n")
