@@ -48,4 +48,26 @@ salary = salary + bonus
 print(salary)
 
 
+print("")
+# lists
+myList = []
+otherList = list()
+
+myList.append(10)
+otherList.append(40)
+
+myList[0] = 2990
+
+myList.append('kjsahdb')
+
+otherList.append('uhsd21')
+
+print(myList, otherList)
+
+
+names = 'john, ahsdb,   ahsbd, ajshb'
+
+print(names.split(','))
+
+
 print("\n")
