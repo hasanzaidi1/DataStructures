@@ -6,10 +6,13 @@ class List:
         self.size = size
         self.type = typeOfList
 
-    def createList(self):
-        return self.x
+    def getList(self):
+        print(self.x)
     
     def append(self, list_nmae, item):
         ls = self.x
-        return ls.append(item)
+        ls.append(item)
         
+# Bitwise operator
+print(0b0110 & 0b111111111010101)
+
