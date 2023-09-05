@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+print(0b1111 ^ 0b0101) # 1010  # same then 0 if different then 1
+
