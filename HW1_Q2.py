@@ -8,10 +8,19 @@ while True:
     if arr[i] > num:
         num = arr[i]
         i += 1
+        continue
+
+    elif num == arr[i]:
+        continue
 
     else:
-        print(num)
         break
-        
+
+
+print(num)
+
+print("hello")
+
+
 
 
