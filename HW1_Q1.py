@@ -27,8 +27,20 @@ def max(values = read()):
         return max
 
 
+def Trendchange(values = read()):
+    change = list()
+    num = values[0]
+    for i in values:
+        for x in values[1:]:
+            if i < x:
+                print("asc")
+            if i > x:
+                print("dec")
+
+trend = Trendchange()
 minVar = min()
 maxVar = max()
 
+# print(trend)
 print(minVar)
 print(maxVar)
