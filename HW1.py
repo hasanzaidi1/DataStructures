@@ -33,27 +33,29 @@ def Trendchange(values = read()):
     change = []
     trend_direction = 0 
 
-    for i in range(1, len(values)):
+    for i in range(len(values)-1):
 
-        previous_num = values[i-1]                # previous num
-        current_num = values[i]                   # current num
+        previous_num = values[i]                # previous num
+        current_num = values[i+1]                   # current num
 
         if current_num > previous_num:
             if trend_direction != 1:
-                change.append(current_num)
+                change.append(values[i])
                 trend_direction = 1
 
         elif current_num < previous_num:
             if trend_direction != -1:
-                change.append(current_num)
+                change.append(values[i])
                 trend_direction = -1
+        else:
+            continue
 
     return change
 
         
 
 
-trend = Trendchange([1, 4, 9, 11, 8, 3, 2, 5, 10])
+trend = Trendchange([1, 4, 9, 11, 8, 3, 2, 5, 10])    # 11,8,2,5
 minVar = min()
 maxVar = max()
 
