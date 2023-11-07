@@ -8,12 +8,21 @@ from stack import Stack
 def isPalindrome(sentence):          
     """Returns True if sentence is a palindrome
     or False otherwise."""
-    stk = Stack() # Creates a stack called stk.
+    stk = Stack() 
 
-    # *** Write your code here ***
-    
+    sentence = sentence.lower()
+
+    for char in sentence:
+        if char != ' ':
+            stk.push(char)
+
+    for char in sentence:
+        if char != ' ':
+            if char != stk.pop():
+                return False
     
     return True
+
 
 # *** Do not modify main() ***
 def main():
