@@ -12,6 +12,7 @@ def isPalindrome(sentence):
 
     # *** Write your code here ***
     
+    
     return True
 
 # *** Do not modify main() ***
